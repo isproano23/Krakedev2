@@ -9,7 +9,15 @@ saludar = function () {
   mostrarImagen("imgsaludo","./imagenes/saludo.gif")
 
   mostrarTexto("lblResultado", mensajeBienvenida);
+
+  mostrarTextoCaja("txtNombre","")
 };
+
+
+mostrarTextoCaja=function(idcomponente,mensaje){
+  let componente = document.getElementById(idcomponente);
+  componente.value = mensaje;
+}
 
 recuperarTexto = function (idcomponente) {
   let componente;
