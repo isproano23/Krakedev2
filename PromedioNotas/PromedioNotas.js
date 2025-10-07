@@ -13,11 +13,17 @@ calacularProemdioNotas = function () {
 
   promedioDecimales = promedioF.toFixed(2);
 
-  if (promedioDecimales >= 7) {
-    mostrarTexto("lblResultado", "APROBADO" + promedioDecimales);
-    mostrarImagen("img", "./imagenes/exito.gif");
-  } else {
+  if (promedioDecimales < 5 && promedioDecimales > 0) {
     mostrarTexto("lblResultado", "REPROBADO" + promedioDecimales);
     mostrarImagen("img", "./imagenes/triste.gif");
+  } else if(promedioDecimales >= 5 && promedioDecimales <= 8){
+     mostrarTexto("lblResultado", "BUEN TRABAJO" + promedioDecimales);
+    mostrarImagen("img", "./imagenes/buentrabajo.gif");
+  }else if (promedioDecimales >8 && promedioDecimales < 10) {
+    mostrarTexto("lblResultado", "EXCELENTE" + promedioDecimales);
+      mostrarImagen("img", "./imagenes/exito.gif");
+  }else{
+    mostrarTexto("lblResultado", " DATOS  INCORRECTOS" );
+      mostrarImagen("img", "./imagenes/error.gif");
   }
 };
