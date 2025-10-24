@@ -280,7 +280,7 @@ buscarRol = function(cedula) {
     return null;
 }
 
-agregarRol = function(rol) {
+agregarRoles = function(rol) {
     let rolExistente = buscarRol(rol.cedula);
     
     if (rolExistente === null) {
@@ -291,7 +291,7 @@ agregarRol = function(rol) {
     }
 }
 
-guardarRol = function() {
+guardarRoles = function() {
     let cedula = recuperarTextoDiv("infoCedula");
     let nombre = recuperarTextoDiv("infoNombre");
     let sueldoTexto = recuperarTextoDiv("infoSueldo");
