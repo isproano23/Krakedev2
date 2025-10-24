@@ -271,7 +271,7 @@ calcularRoles = function() {
     habilitarBotonGuardarRol();
 }
 
-buscarRol = function(cedula) {
+buscarRoles = function(cedula) {
     for (let i = 0; i < roles.length; i++) {
         if (roles[i].cedula === cedula) {
             return roles[i];
@@ -291,7 +291,7 @@ agregarRol = function(rol) {
     }
 }
 
-guardarRol = function() {
+guardarRoles = function() {
     let cedula = recuperarTextoDiv("infoCedula");
     let nombre = recuperarTextoDiv("infoNombre");
     let sueldoTexto = recuperarTextoDiv("infoSueldo");
