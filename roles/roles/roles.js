@@ -208,7 +208,7 @@ validarCampos = function(cedula, nombre, apellido, sueldo) {
 
 
 //ROL DE PAGOS
-buscarPorRol = function() {
+buscarPorRoles = function() {
     mostrarTexto("lblErrorBusqueda", "");
     let cedulaBusqueda = recuperarTexto("txtBusquedaCedulaRol");
 
@@ -243,7 +243,7 @@ calcularValorAPagar = function(sueldo, aporte, descuento) {
     return sueldo - aporte - descuento;
 }
 
-calcularRol = function() {
+calcularRoles = function() {
     let sueldo = recuperarFloatDiv("infoSueldo");
     let descuento = recuperarFloat("txtDescuentos");
 
